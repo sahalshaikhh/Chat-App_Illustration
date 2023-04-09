@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- displays site properly based on user's device -->
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Chat-App]</title>
+  </head>
+  <body>
+    <div class="Upper-banner-pc hidden md:block"></div>
+    <div class="containerr">
+      <div class="Upper-banner"></div>
+      <div class="main">
+        <div class="center-div">
+          <div class="full-mobile-screen bg-white">
+            <div class="notch text-white">
+              <div class="inner-notch"></div>
+            </div>
+            <div class="Chat-screen bg-slate-300 px-4 pt-2 pb-4">
+              <!-- Top Profile Section -->
+              <div class="top-profile flex justify-between">
+                <!-- Start of First Section -->
+
+                <div class="first-section flex">
+                  <div class="arrow w-8 flex justify-center items-center">
+                    <img
+                      src="./images/angle-small-right.png"
+                      alt="back-Arrow"
+                    />
+                  </div>
+                  <div class="circle-profile flex justify-center items-center">
+                    <img
+                      src="./images/avatar.jpg"
+                      alt="Avatar"
+                      class="Avatar-img w-10 mr-2"
+                    />
+                  </div>
+                  <div class="detail text-white">
+                    <div class="name font-medium">
+                      <p>Samuel Green</p>
+                    </div>
+                    <div class="about text-xs">
+                      <p class="">Available to Walk</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of first section -->
+
+                <!-- Last Three dots -->
+                <div class="last-section w-3 flex justify-center items-center">
+                  <div class="last-three-dots">
+                    <img
+                      src="./images/menu-dots-vertical.png"
+                      alt="last-three-dots"
+                    />
+                  </div>
+                </div>
+                <!-- End of Three Dots -->
+              </div>
+              <!-- End of Top Profile Section -->
+
+              <div class="chat-msg w-[90%]">
+                <!-- Left-side Chats -->
+                <div class="msg-one mb-3 px-2 py-2">
+                  <p>That sounds great. I’d be happy to discuss more.</p>
+                </div>
+                <!-- Second Msg -->
+                <div class="Second-msg py-2 px-2">
+                  <p>Could you send over some pictures of your dog, please?</p>
+                </div>
+                <!-- End of Left Side Chats -->
+
+                <!-- Start of Right-Side Chats -->
+                <div class="photos flex gap-2 mb-2 my-4">
+                  <div class="first-img-dog">
+                    <img src="./images/dog-image-1.jpg" alt="dog-image-1" />
+                  </div>
+                  <div class="seconf-img-dog">
+                    <img src="./images/dog-image-2.jpg" alt="dog-image-2" />
+                  </div>
+                  <div class="third-img-dog">
+                    <img src="./images/dog-image-3.jpg" alt="dog-image-3" />
+                  </div>
+                </div>
+                <div class="chats-right">
+                  <div class="right-msg-one mb-3 px-2 py-2">
+                    <p>Here are a few pictures. She’s a happy girl!</p>
+                  </div>
+                  <div class="right-msg-two mb-3 px-2 py-2">
+                    <p>Can you make it?</p>
+                  </div>
+                </div>
+                <!-- End of Right-side of chats -->
+
+                <!-- Left Chat -->
+                <div class="Second-msg py-2 px-2">
+                  <p>
+                    She looks so happy! The time we discussed works. How long
+                    shall I take her out for?
+                  </p>
+                </div>
+                <!-- End of Left chat -->
+
+                <!-- Plans starting -->
+                <div class="plans my-4">
+                  <div class="first-plan flex justify-between mb-3">
+                    <div class="flex gap-2 justify-center items-center">
+                      <div class="circle"></div>
+                      <div class="msg">
+                        <p>30 minute walk</p>
+                      </div>
+                    </div>
+                    <div class="price font-bold text-2xl">
+                      <h1>$29</h1>
+                    </div>
+                  </div>
+                  <div class="first-plan flex justify-between">
+                    <div class="flex gap-2 justify-center items-center">
+                      <div class="circle"></div>
+                      <div class="msg">
+                        <p>1 hour walk</p>
+                      </div>
+                    </div>
+                    <div class="price font-bold text-2xl">
+                      <h1>$49</h1>
+                    </div>
+                  </div>
+                </div>
+                <!-- Plans End -->
+                <div class="search">
+                  <input
+                    type="search"
+                    name="search"
+                    id="search-input"
+                    placeholder="Type a message…"
+                  />
+                  <img
+                    src="https://www.flaticon.com/svg/vstatic/svg/6407/6407340.svg?token=exp=1680978573~hmac=3074dded0d0b90bf9e2c489a2aa11576"
+                    alt="search-button"
+                    class="w-8 enter-btn"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Start of Footer text -->
+        <div class="foot flex flex-col gap-4 text-justify px-12">
+          <div class="heading">
+            <h1 class="text-justify">Simple booking</h1>
+          </div>
+          <div class="para mb-4 text-justify">
+            <p>
+              Stay in touch with our dog walkers through the chat interface.
+              This makes it easy to discuss arrangements and make bookings. Once
+              the walk has been completed you can rate your walker and book
+              again all through the chat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
